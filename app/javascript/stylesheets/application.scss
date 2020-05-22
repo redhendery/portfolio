@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import '~bulma';
+
+// Universal Styling
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.footer {
+  padding: 1rem 0.5rem 1rem;
+}
+
+#socials {
+  img {
+    padding-top: 15px;
+    max-width: 55%;
+  }
+}

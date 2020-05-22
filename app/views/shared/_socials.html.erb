@@ -1,0 +1,25 @@
+<% if current_page?(contact_index_path)%>
+  <h4 class="title is-4 has-text-centered">Or Find Me Here</h4>
+<% else %>
+  <br>
+  <hr>
+  <h4 class="title is-4 has-text-centered">Reach Out Here</h4>
+<% end %>
+
+<div class="columns is-centered">
+  <div class="column is-5">
+    <div id="socials" class="columns justify-space-between">
+      <div class="column has-text-centered">
+        <%= link_to image_tag('linkedin.png', alt: 'LinkedIn'), 'https://www.linkedin.com/in/red-hendery-a6672799/', target: 'blank' %>
+      </div>
+      <% unless current_page?(contact_index_path) %>
+        <div class="column has-text-centered">
+          <%= link_to image_tag('mail.png', alt: 'Email'), contact_index_path %>
+        </div>
+      <% end %>
+      <div class="column has-text-centered">
+        <%= link_to image_tag('github.png', alt: 'Github'), 'https://github.com/redhendery/', target: 'blank' %>
+      </div>
+    </div>
+  </div>
+</div>
