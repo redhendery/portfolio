@@ -1,2 +1,21 @@
-<h1>StaticPages#portfolio</h1>
-<p>Find me in app/views/static_pages/portfolio.html.erb</p>
+<h1 class="title is-1">Some of the Things I Have Done</h1>
+<hr>
+
+<div class="columns is-centered">
+  <div class="column is-half">
+    <%= render 'static_pages/partials/blog' %>
+  </div>
+</div>
+
+<hr>
+<br>
+<div class="columns">
+  <div class="column">
+    <%= render 'static_pages/partials/mcc' %>
+  </div>
+  <div class="column is-offset-2">
+    <%= render 'static_pages/partials/nzihl' %>
+  </div>
+</div>
+
+<%= javascript_pack_tag 'modal' %>

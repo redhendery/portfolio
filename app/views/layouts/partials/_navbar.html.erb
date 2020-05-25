@@ -1,10 +1,10 @@
-<nav class="navbar is-primary">
+<nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
+      <%= link_to image_tag('red.png', alt: "Red Hendery's Face"), root_path, class: 'image is-64x64' %>
 
-      <%= link_to 'Red Hendery', root_path, class: 'navbar-item' %>
-
-      <span class="navbar-burger burger" data-target="navMenu">
+      <%= link_to 'Red Hendery', root_path, class: 'navbar-item has-text-white' %>
+      <span class="navbar-burger burger has-text-white" data-target="navMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -13,10 +13,10 @@
 
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-end">
-        <%= link_to 'About', about_path, class: 'navbar-item' %>
-        <%= link_to 'Contact', contact_index_path, class: 'navbar-item' %>
-        <%= link_to 'Portfolio', portfolio_path, class: 'navbar-item' %>
-        <%= link_to 'Check Out The Code Here', 'https://github.com/redhendery/blogus-latinus', target: 'blank', class: 'navbar-item' %>
+        <%= link_to 'About', about_path, class: 'navbar-item has-text-white' %>
+        <%= link_to 'Contact', contact_index_path, class: 'navbar-item has-text-white' %>
+        <%= link_to 'Portfolio', portfolio_path, class: 'navbar-item has-text-white' %>
+        <%= link_to 'See This Code!', 'https://github.com/redhendery/portfolio', target: 'blank', class: 'navbar-item has-text-white' %>
       </div>
     </div>
   </div>

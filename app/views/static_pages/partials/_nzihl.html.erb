@@ -1,0 +1,39 @@
+<h3 class="title is-3 has-text-centered">New Zealand Ice Hockey League</h3>
+<a class="modal-button" data-target="#nzihl" aria-haspopup="true">
+  <%= image_tag 'nzihl_1.png', alt: 'NZIHL Stats App' %>
+</a>
+
+<div class="modal" id="nzihl">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title has-text-centered">New Zealand Ice Hockey League</p>
+    <button class="delete is-large" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <%= image_tag 'nzihl_2.png', alt: 'NZIHL' %>
+      <br>
+      <br>
+      <p class="has-text-dark">
+        I used to be very involved with the New Zealand Ice Hockey League. I filmed games, commentated games,
+        edit highlight clips produced and directed game day shoots. It was amazing fun and I really miss making TV and
+        covering hockey. Back then, there was no easy way to view, stats, standings and game results at that time.
+        So I made an app that did those things and I had a good time doing it.
+      </p>
+      <br>
+      <p class="has-text-dark">
+        This is the first thing I made on my own that I was happy with and proud of. It was a tremoundous learning experience.
+      </p>
+      <br>
+      <p class="has-text-dark">
+        Built with Rails 5, Bootstrap 3, PostgreSQL, Heroku, JavaScript, Data Tables and some other things.
+      </p>
+    </section>
+    <footer class="modal-card-foot">
+      <p class="has-text-dark">
+        Take a look <%= link_to 'at the website', 'https://nzihl.herokuapp.com/', target: 'blank' %>
+        or have a peak <%= link_to 'at the code!', 'https://github.com/redhendery/hockey_site', target: 'blank' %>
+      </p>
+    </footer>
+  </div>
+</div>

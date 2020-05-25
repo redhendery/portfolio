@@ -1,6 +1,51 @@
-<h3 class="title is-4">Hello my name is Red Hendery and this is my online portfolio. There are easter eggs.</h3>
+<p class="is-size-4">Hello my name is Red Hendery and this is my online portfolio. There are easter eggs.</p>
 <br>
-<h3 class="title is-4">I am a Ruby on Rails Developer, I have multiple years of experience, I likes dogs and coffee.</h3>
+<p class="is-size-4">I am primarily a Ruby on Rails developer with multiple years of experience, I likes dogs and coffee.</p>
 <br>
 
-<h1 class="title is-1">I do these things</h1>
+<h1 class="title is-1" style="padding-top:15px;">I mostly do these things</h1>
+<br>
+
+<div class="columns has-text-centered is-vcentered">
+  <div class="column">
+    <%= image_tag 'rails.png', alt: 'Ruby on Rails', id: 'home-img'  %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Ruby on Rails</p>
+    <p class="has-text-centered">Full-Stack, Back-End, WebPack, NodeJS etc...</p>
+  </div>
+  <div class="column">
+    <%= image_tag 'heroku.png', alt: 'Heroku Logo', id: 'home-img' %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Cloud Deployments</p>
+    <p class="has-text-centered">Heroku, AWS, Google Cloud</p>
+  </div>
+</div>
+
+<div class="columns has-text-centered is-vcentered">
+  <div class="column">
+    <%= image_tag 'html.png', alt: 'HTML', id: 'home-img' %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Front-End Development</p>
+    <p class="has-text-centered">HTML, CSS, SaSS, JavaScipt</p>
+  </div>
+  <div class="column">
+    <%= image_tag 'database.png', alt: 'Databases', id: 'home-img' %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Databases</p>
+    <p class="has-text-centered">Relational: MySQL, SQL, Non-Relational: NoSQL</p>
+  </div>
+  <div class="column">
+    <%= image_tag 'responsive.png', alt: 'Responsive Design', id: 'home-img' %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Responsive Design</p>
+    <p class="has-text-centered">CSS, SCSS and Design Frameworks</p>
+  </div>
+</div>
+
+<div class="columns has-text-centered is-vcentered">
+  <div class="column">
+    <%= image_tag 'github.png', alt: 'Github', id: 'home-img' %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Github</p>
+    <p class="has-text-centered">Source Code Management</p>
+  </div>
+  <div class="column">
+    <%= image_tag 'testing.png', alt: 'Testing', id: 'home-img' %>
+    <p class="is-size-4 has-text-centered" style="padding-top:7px;">Testing</p>
+    <p class="has-text-centered">User, Functional, Integration, TDD and BDD</p>
+  </div>
+</div>

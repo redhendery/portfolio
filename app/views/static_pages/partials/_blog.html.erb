@@ -1,0 +1,40 @@
+<h3 class="title is-3 has-text-centered">Blogus Latinus</h3>
+<a class="modal-button" data-target="#blog" aria-haspopup="true">
+  <%= image_tag 'blog_1', alt: 'Blogus Latinus' %>
+</a>
+
+<div class="modal" id="blog">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title has-text-centered">Blogus Latinus</p>
+    <button class="delete is-large" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <%= image_tag 'blog_2.png', alt: 'Blogus Latinus' %>
+      <br>
+      <br>
+      <p class="has-text-dark">
+        I built this blog site as part of a test screen for a job interview. I was required to build a blog
+        that does exactly what this website does, and less! I got a bit carried away but I'm really happy
+        with how it turned out and I lot's of fun had building it.
+      </p>
+      <br>
+      <p class="has-text-dark">
+        The User names are characters from Silicon Valley, the Blog Post's are Lorem Ipsum,
+        the User quotes are quotes from The IT Crowd and the comments are quotes from Community. Thanks
+        <%= link_to 'Faker', 'https://github.com/faker-ruby/faker', target: 'blank' %>!
+      </p>
+      <br>
+      <p class="has-text-dark">
+        Built with Rails 6, Bulma CSS, MongoDB, Devise, Heroku, Send In Blue and some other things.
+      </p>
+    </section>
+    <footer class="modal-card-foot">
+      <p class="has-text-dark">
+        Take a look <%= link_to 'at the website', 'https://blogus-latinus.herokuapp.com/', target: 'blank' %>
+        or take a look <%= link_to 'at the code!', 'https://github.com/redhendery/blogus-latinus', target: 'blank' %>
+      </p>
+    </footer>
+  </div>
+</div>

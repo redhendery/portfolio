@@ -1,16 +1,23 @@
 @charset "utf-8";
 @import '~bulma';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 // Universal Styling
 .main {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: 'Nunito', sans-serif;
 }
 
 .section {
   flex: 1;
 }
+
+body {
+  background-color: #e6e5e3;
+}
+
 
 h1 {
   text-align: center;
@@ -18,15 +25,56 @@ h1 {
 
 p {
   text-align: justify;
+  color: 	#7A7A7A;
+}
+
+a:hover {
+  color: blue;
+}
+
+.navbar {
+  background-color: #7ecafc;
+  img {
+    margin: auto;
+    margin-top: 8px;
+    max-width: 75%;
+    border-radius: 50%;
+  }
+  .navbar-menu {
+    background-color: #7ecafc;
+  }
+  .navbar-burger {
+    margin-top: 6px;
+  }
+  a:hover {
+    background-color: #69c0fc;
+  }
 }
 
 .footer {
   padding: 1rem 0.5rem 1rem;
+  background-color: #e68855;
+}
+
+hr {
+  border-top: 1px solid #7A7A7A;
+}
+
+#home-img {
+  max-height: 200px;
+  padding-top: 30px;
 }
 
 #socials {
   img {
     padding-top: 15px;
     max-width: 55%;
+  }
+}
+
+// Modal styling, make larger on big screen but fill screen on mobile
+@media only screen and (min-width: 769px), print {
+  .modal-content, .modal-card {
+    width: 50%;
   }
 }

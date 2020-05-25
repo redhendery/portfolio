@@ -1,0 +1,35 @@
+<h3 class="title is-3 has-text-centered">Marin Cricket Club</h3>
+<a class="modal-button" data-target="#marincricketclub" aria-haspopup="true">
+  <%= image_tag 'mcc_website.png', alt: 'Marin Cricket Club' %>
+</a>
+
+<div class="modal" id="marincricketclub">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title has-text-centered">Marin Cricket Club</p>
+    <button class="delete is-large" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <%= image_tag 'mcc_2.png', alt: 'Marin Cricket Club' %>
+      <br>
+      <br>
+      <p class="has-text-dark">
+        For Marin Cricket Club the goal was to allow players to sign up for games, pay for
+        memberships and games electornically and to continue to promote the club to public.
+        There is a full blown user system, game results, stat tracking and more!
+        This is a project that will continue to be updated and evlove over the next few years.
+      </p>
+      <br>
+      <p class="has-text-dark">
+        Built with Rails, Bootstrap 4, PostgresQL, Heroku, JavaScript, SendGrid and some other things.
+      </p>
+    </section>
+    <footer class="modal-card-foot">
+      <p class="has-text-dark">
+        Take a look <%= link_to 'at the website', 'https://www.marincricketclub.com/', target: 'blank' %>
+        or have a peak <%= link_to 'at the code!', 'https://github.com/redhendery/MCC_Socials', target: 'blank' %>
+      </p>
+    </footer>
+  </div>
+</div>
