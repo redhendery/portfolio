@@ -2,8 +2,15 @@
 <hr>
 
 <p>
-  I live in Seattle, Washington which rains nearly as much as Wellington, New Zealand
-  where I'm from. I like that in Seattle, it isn't so windy that it sometimes rains up.
+  I live in Seattle, Washington which rains nearly as much as
+  <%= link_to 'Wellington, New Zealand', 'https://en.climate-data.org/oceania/new-zealand/wellington/wellington-2/',
+                                                                            target: 'blank', style: 'color:#7A7A7A;' %>
+  where I'm from. I like that in Seattle, it isn't so windy that it sometimes rains up. I guess that's why they call it
+  <span class="tooltip">"Windy Wellington".
+    <span class="tooltipimage">
+      <%= image_tag 'wellington.jpg', alt: 'Wellington Sign', style: 'border-bottom:none;' %>
+    </span>
+  </span>
 </p>
 <br>
 
@@ -17,12 +24,20 @@
 <p>
   I have spent the last nearly 3 years in the US immigration process which was frustrating but
   and I am now a proud holder of a work authorisation! To keep myself occupied during the immigration wait,
-  I worked on various coding projects for friends and family. Spent over 500 hours playing with dogs at the
+  I worked on various coding projects and spent
+  <span class="tooltip"> nearly 500 hours
+    <span class="tooltipspca">
+      <%= image_tag 'SPCA.png', alt: 'SPCA Volunteer Record' %>
+    </span>
+  </span>
+  playing with dogs at the
   <%= link_to 'San Francisco SPCA', 'https://www.sfspca.org', target: 'blank' %> because dogs are awesome.
   I also Project Managed the shit out of the
   <%= link_to 'Marin Cricket Clubs', 'https://www.marincricketclub.com/', target: 'blank' %> Social Cricket Program.
   I played for them when I lived in the Bay Area, built them software to automate weekly tasks,
   improved player engagement, increased membership numbers and club revenue.
+  During the Corona Virus lockdown, I rebuilt the site from scratch, added tons of new functionality and so it could use Rails 6 and take
+  advantage of Webpack. It is easily the best thing I have made.
 </p>
 <br>
 
@@ -32,3 +47,5 @@
 </p>
 
 <%= render 'shared/socials' %>
+
+<%= javascript_pack_tag 'modal' %>

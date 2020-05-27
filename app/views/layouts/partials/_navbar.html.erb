@@ -1,8 +1,11 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <%= link_to image_tag('red.png', alt: "Red Hendery's Face"), root_path, class: 'image is-64x64' %>
-
+      <% if current_page?(about_path) %>
+        <%= render 'static_pages/partials/organic_chemistry' %>
+      <% else %>
+        <%= link_to image_tag('red.png', alt: "Red Hendery's Face"), root_path, class: 'image is-64x64' %>
+      <% end %>
       <%= link_to 'Red Hendery', root_path, class: 'navbar-item has-text-white' %>
       <span class="navbar-burger burger has-text-white" data-target="navMenu">
         <span></span>

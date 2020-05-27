@@ -1,0 +1,49 @@
+<a class="modal-button" data-target="#organic_chemistry" aria-haspopup="true">
+  <%= image_tag 'red.png', alt: "Red Hendery's Face", class: 'image is-64x64' %>
+</a>
+
+<div class="modal" id="organic_chemistry">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title has-text-centered">Organic Chemistry by Chuck and The Rayguns</p>
+    <button class="delete is-large" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <section class="has-text-centered">
+        <iframe
+          width="650" height="400" src="https://www.youtube-nocookie.com/embed/Z-5V40MyQ8U"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen>
+        </iframe>
+      </section>
+      <br>
+      <br>
+      <p class="has-text-dark">
+        Made as part of the <%= link_to 'New Zealand 48 Hour Film Festival', 'https://www.48hours.co.nz/', target: 'blank' %>
+        in 2013. You have 48 hours to write, shoot, direct edit and then physically hand in a film. We had a blast making this and got some
+        huge laughs from the crowd. 'P' is what meth is called in New Zealand, so to trying to get an 'Organic' thing which is mashed up chemicals
+        is a joke in and of itself. Our genre of film was to be "Race Against The Clock" where the main character is racing to get ready for a date.
+      </p>
+
+      <br>
+      <p class="has-text-dark">As is stipulated by competition rules, we used the following elements in our film:</p>
+        <ul class="">
+          <li>Prop: Card</li>
+          <li>Technical Shot: Point of View</li>
+          <li>Line of Dialogue: "Did you hear that?"</li>
+          <li>Character: Vic Myer who is an insomniac.</li>
+        </ul>
+
+      <br>
+      <p class="has-text-dark">
+        The picture in the navbar is screen capped from this film this and it's wonky to draw attention to it.
+      </p>
+      <br>
+      <p class="has-text-dark">
+        This team made three films which you can
+        <%= link_to 'watch here', 'https://www.youtube.com/channel/UCYdo65lDheCt5EbDMSStdOg', target: 'blank' %> if you wanted to!
+      </p>
+    </section>
+  </div>
+</div>

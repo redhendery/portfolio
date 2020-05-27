@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def portfolio
   end
+
+  def egg_cheater
+  end
 end
