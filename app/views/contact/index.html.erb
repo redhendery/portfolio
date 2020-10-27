@@ -22,8 +22,12 @@
 
       <div class="field">
         <%= f.label :message, class: 'label' %>
-        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: 'textarea',
-                                  placeholder: 'Your message to Red' %>
+        <%= f.text_area :message, rows: 8, cols: 40, required: true,
+                    class: 'textarea', placeholder: 'Your message to Red' %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :ham_sandwich, autocomplete: 'off' %>
       </div>
 
       <div class="field">
